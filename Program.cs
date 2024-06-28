@@ -4,17 +4,16 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        //While
+     // do While
 
-        Console.WriteLine("Digite um numero positivo: ");
-        int valor = int.Parse(Console.ReadLine());
-
-        while (valor < 5)
+    int preço = 0;
+        do
         {
-            Console.WriteLine(  "Valor é: " + valor);
-            valor++;
+            if (preço == 5)
+                Console.WriteLine(" o preço é: " + preço);
 
-        }
+            preço++;
+        } while (preço < 10);
     }
 
 }
